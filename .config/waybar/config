@@ -8,7 +8,7 @@
 
     "modules-left":   ["clock", "tray"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right":  ["privacy", "memory", "cpu", "wireplumber", "network", "battery"],
+    "modules-right":  ["hyprland/language", "privacy", "memory", "cpu", "wireplumber", "network", "battery"],
 
     "battery": {
         "format": "{icon}",
@@ -34,55 +34,55 @@
     },
 
     "network": {
-        "format": "{icon}",
+        "format": "{icon} {signalStrength}",
 
         "format-icons": [
-            "\udb82\udd2f ",
-            "\udb82\udd1f ",
-            "\udb82\udd22 ",
-            "\udb82\udd25 ",
-            "\udb82\udd28 "
+            "\udb82\udd2f  ",
+            "\udb82\udd1f  ",
+            "\udb82\udd22  ",
+            "\udb82\udd25  ",
+            "\udb82\udd28  "
         ]
     },
 
     "cpu": {
-        "format": "{icon}",
+        "format": "{icon} {usage}",
 
         "format-icons": [
-            "\udb80\udd30 ",
-            "\udb82\ude9e ",
-            "\udb82\ude9f ",
-            "\udb82\udea0 ",
-            "\udb82\udea1 ",
-            "\udb82\udea2 ",
-            "\udb82\udea3 ",
-            "\udb82\udea4 ",
-            "\udb82\udea5 "
+            "\udb80\udd30  ",
+            "\udb82\ude9e  ",
+            "\udb82\ude9f  ",
+            "\udb82\udea0  ",
+            "\udb82\udea1  ",
+            "\udb82\udea2  ",
+            "\udb82\udea3  ",
+            "\udb82\udea4  ",
+            "\udb82\udea5  "
         ]
     },
 
     "memory": {
-        "format": "{icon}",
+        "format": "{icon} {percentage}",
 
         "format-icons": [
-            "\udb80\uded9 ",
-            "\udb82\udec3 ",
-            "\udb82\udec4 ",
-            "\udb82\udec5 ",
-            "\udb82\udec6 ",
-            "\udb82\udec7 ",
-            "\udb82\udec8 "
+            "\udb80\uded9  ",
+            "\udb82\udec3  ",
+            "\udb82\udec4  ",
+            "\udb82\udec5  ",
+            "\udb82\udec6  ",
+            "\udb82\udec7  ",
+            "\udb82\udec8  "
         ]
     },
 
     "wireplumber": {
-        "format":       "{icon}",
-        "format-muted": "\ueee8 ",
+        "format":       "{icon} {volume}",
+        "format-muted": "\ueee8  {volume}",
 
         "format-icons": [
-            "\uf026 ",
-            "\uf027 ",
-            "\uf028 "
+            "\uf026  ",
+            "\uf027  ",
+            "\uf028  "
         ]
     },
 
@@ -100,6 +100,13 @@
         "persistent-workspaces": {
             "*": 10
         }
+    },
+
+    "hyprland/language": {
+        "format": "󰌌  {}",
+        "format-en": "En",
+        "format-de": "De",
+        "format-es": "Es"
     },
 
     "privacy": {
