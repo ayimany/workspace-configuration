@@ -8,24 +8,24 @@
 
     "modules-left":   ["clock", "tray"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right":  ["hyprland/language", "privacy", "memory", "cpu", "wireplumber", "network", "battery"],
+    "modules-right":  ["privacy", "hyprland/language", "memory", "cpu", "wireplumber", "network", "battery"],
 
     "battery": {
-        "format": "{icon}",
-        "format-charging": "{icon}󱐋",
+        "format": "{icon} {capacity}",
+        "format-charging": "{icon}󱐋 {capacity}",
 
         "format-icons": [
-            "\udb80\udc8e ",
-            "\udb80\udc7a ",
-            "\udb80\udc7b ",
-            "\udb80\udc7c ",
-            "\udb80\udc7d ",
-            "\udb80\udc7e ",
-            "\udb80\udc7f ",
-            "\udb80\udc80 ",
-            "\udb80\udc81 ",
-            "\udb80\udc82 ",
-            "\udb80\udc79 "
+            "\udb80\udc8e  ",
+            "\udb80\udc7a  ",
+            "\udb80\udc7b  ",
+            "\udb80\udc7c  ",
+            "\udb80\udc7d  ",
+            "\udb80\udc7e  ",
+            "\udb80\udc7f  ",
+            "\udb80\udc80  ",
+            "\udb80\udc81  ",
+            "\udb80\udc82  ",
+            "\udb80\udc79  "
         ]
     },
 
