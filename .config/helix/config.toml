@@ -1,0 +1,77 @@
+theme = "catppuccin_latte"
+
+[editor]
+scrolloff = 8
+shell = ["fish", "-c"]
+cursorline = true
+bufferline = "multiple"
+color-modes = true
+text-width = 80
+insert-final-newline = true
+trim-final-newlines = true
+atomic-save = false
+line-number = "relative"
+mouse = false
+
+[editor.statusline]
+left = ["mode", "file-name", "file-modification-indicator", "read-only-indicator"]
+center = ["diagnostics", "workspace-diagnostics", "version-control"]
+right = ["selections", "position"]
+
+[editor.lsp]
+enable = true
+display-inlay-hints = true
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+render = false
+character = "│"
+skip-levels = 1
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.soft-wrap]
+enable = false
+wrap-at-text-width = true
+
+[editor.smart-tab]
+enable = true
+
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+
+[keys.normal]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
