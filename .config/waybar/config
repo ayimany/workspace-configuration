@@ -77,12 +77,12 @@
 
     "wireplumber": {
         "format":       "{icon} {volume}",
-        "format-muted": "\ueee8  {volume}",
+        "format-muted": "\udb81\udf5f   {volume}",
 
         "format-icons": [
-            "\uf026  ",
-            "\uf027  ",
-            "\uf028  "
+            "\udb81\udd7f  ",
+            "\udb81\udd80  ",
+            "\udb81\udd7e  "
         ]
     },
 
