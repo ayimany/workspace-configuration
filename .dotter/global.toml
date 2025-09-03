@@ -42,9 +42,9 @@ mako   = "~/.config/mako"
 
 [desktop-settings.files]
 fontconfig = "~/.config/fontconfig"
-darkman-config = "~/.config/darkman"
-darkman-dark   = "~/.local/share/dark-mode.d"
-darkman-light  = "~/.local/share/light-mode.d"
+"darkman/config" = "~/.config/darkman"
+"darkman/dark"   = "~/.local/share/dark-mode.d"
+"darkman/light"  = "~/.local/share/light-mode.d"
 
 [desktop-apps.files]
 mpv     = "~/.config/mpv"
