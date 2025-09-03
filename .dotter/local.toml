@@ -1,0 +1,20 @@
+includes = []
+packages = [
+    "system-shell",
+
+    "terminal-apps",
+
+    "development-languages",
+
+    "desktop-xdg",
+    "desktop-compositors",
+    "desktop-utilities",
+    "desktop-settings",
+    "desktop-apps",
+
+    "wayland-utilities",
+]
+
+[files]
+
+[variables]

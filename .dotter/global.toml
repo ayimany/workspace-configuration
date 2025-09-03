@@ -1,0 +1,60 @@
+[settings]
+default_target_type = "automatic"
+
+# =============================================================================
+# System
+# =============================================================================
+
+[system-shell.files]
+fish = "~/.config/fish"
+starship = "~/.config/starship"
+
+# =============================================================================
+# Terminal 
+# =============================================================================
+
+[terminal-apps.files]
+glow = "~/.config/glow"
+btop = "~/.config/btop"
+nvim = "~/.config/nvim"
+
+# =============================================================================
+# Development
+# =============================================================================
+
+[development-languages.files]
+python = "~/.config/python"
+
+# =============================================================================
+# Desktop
+# =============================================================================
+
+[desktop-xdg.files]
+xdg-desktop-portal = "~/.config/xdg-desktop-portal"
+
+[desktop-compositors.files]
+hyprland = "~/.config/hypr"
+
+[desktop-utilities.files]
+waybar = "~/.config/waybar"
+rofi   = "~/.config/rofi"
+mako   = "~/.config/mako"
+
+[desktop-settings.files]
+fontconfig = "~/.config/fontconfig"
+darkman-config = "~/.config/darkman"
+darkman-dark   = "~/.local/share/dark-mode.d"
+darkman-light  = "~/.local/share/light-mode.d"
+
+[desktop-apps.files]
+mpv     = "~/.config/mpv"
+zathura = "~/.config/zathura"
+ghostty = "~/.config/ghostty"
+
+# =============================================================================
+# Wayland
+# =============================================================================
+
+[wayland-utilities.files]
+uwsm = "~/.config/uwsm"
+

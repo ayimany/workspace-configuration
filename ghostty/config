@@ -1,0 +1,30 @@
+theme = light:catppuccin-latte, dark:catppuccin-mocha
+font-family = monospace,symbols
+font-feature = +calt, +liga, +dlig
+font-size = 12
+cursor-style = bar
+background-opacity = 1.0
+background-blur = false
+
+window-padding-x = 16
+window-padding-y = 16
+
+clipboard-paste-protection = true
+
+shell-integration = fish
+shell-integration-features = true
+
+app-notifications = true
+desktop-notifications = true
+
+keybind = ctrl+q=close_surface
+
+keybind = ctrl+u=new_split:left
+keybind = ctrl+i=new_split:down
+keybind = ctrl+o=new_split:up
+keybind = ctrl+p=new_split:right
+
+keybind = alt+u=goto_split:left
+keybind = alt+i=goto_split:down
+keybind = alt+o=goto_split:up
+keybind = alt+p=goto_split:right

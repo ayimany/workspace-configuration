@@ -1,0 +1,144 @@
+{
+    "layer":        "top",
+    "position":     "top",
+    "exclusive":    true,
+    "fixed-center": true,
+    "height":       32,
+    "spacing":      0,
+
+    "modules-left":   ["clock", "tray"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right":  ["privacy", "hyprland/language", "memory", "cpu", "wireplumber", "network", "battery"],
+
+    "battery": {
+        "format": "{icon} {capacity}",
+        "format-charging": "{icon}󱐋 {capacity}",
+
+        "format-icons": [
+            "\udb80\udc8e  ",
+            "\udb80\udc7a  ",
+            "\udb80\udc7b  ",
+            "\udb80\udc7c  ",
+            "\udb80\udc7d  ",
+            "\udb80\udc7e  ",
+            "\udb80\udc7f  ",
+            "\udb80\udc80  ",
+            "\udb80\udc81  ",
+            "\udb80\udc82  ",
+            "\udb80\udc79  "
+        ]
+    },
+
+    "clock": {
+        "format": "{:%H:%M}"
+    },
+
+    "network": {
+        "format": "{icon} {signalStrength}",
+
+        "format-icons": [
+            "\udb82\udd2f  ",
+            "\udb82\udd1f  ",
+            "\udb82\udd22  ",
+            "\udb82\udd25  ",
+            "\udb82\udd28  "
+        ]
+    },
+
+    "cpu": {
+        "format": "{icon}",
+
+        "format-icons": [
+            "\udb80\udd30 ",
+            "\udb82\ude9e ",
+            "\udb82\ude9f ",
+            "\udb82\udea0 ",
+            "\udb82\udea1 ",
+            "\udb82\udea2 ",
+            "\udb82\udea3 ",
+            "\udb82\udea4 ",
+            "\udb82\udea5 "
+        ]
+    },
+
+    "memory": {
+        "format": "{icon}",
+
+        "format-icons": [
+            "\udb80\uded9 ",
+            "\udb82\udec3 ",
+            "\udb82\udec4 ",
+            "\udb82\udec5 ",
+            "\udb82\udec6 ",
+            "\udb82\udec7 ",
+            "\udb82\udec8 "
+        ]
+    },
+
+    "wireplumber": {
+        "format":       "{icon} {volume}",
+        "format-muted": "\udb81\udf5f   {volume}",
+
+        "format-icons": [
+            "\udb81\udd7f  ",
+            "\udb81\udd80  ",
+            "\udb81\udd7e  "
+        ]
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+
+        "format-icons": {
+            "empty":      "󰄰",
+            "default":    "󰄰",
+            "persistent": "󰄰",
+            "active":     "󰄯",
+            "special":    "󰫢"
+        },
+
+        "persistent-workspaces": {
+            "*": 10
+        }
+    },
+
+    "hyprland/language": {
+        "format": "󰌌  {}",
+        "format-en": "En",
+        "format-de": "De",
+        "format-es": "Es"
+    },
+
+    "privacy": {
+        "icon-spacing":        8,
+        "icon-size":           12,
+        "transition-duration": 250,
+
+        "modules": [
+            {
+                "type":              "screenshare",
+                "tooltip":           true,
+                "tooltip-icon-size": 12
+            },
+            {
+                "type":              "audio-out",
+                "tooltip":           true,
+                "tooltip-icon-size": 12
+            },
+            {
+                "type":              "audio-in",
+                "tooltip":           true,
+                "tooltip-icon-size": 12
+            }
+        ],
+
+        "ignore-monitor": true
+    },
+
+    "tray": {
+        "icon-size": 12,
+        "show-passive-items": true,
+        "spacing": 8
+      
+    }
+}

@@ -1,0 +1,50 @@
+@import "theme/current.css";
+
+* {
+    all: unset;
+}
+
+window#waybar {
+    background-color: @base;
+
+    font-family: "monospace,symbols";
+    font-size:   12px;
+}
+
+.module {
+    color: @text;
+
+    border-radius: 16px;
+    font-weight:   900;
+    padding:       0px 8px 0px 8px;
+    margin:        0px 4px 0px 4px;
+}
+
+#workspaces button {
+    color: @text;
+
+    margin-right: 8px;
+    margin-left:  8px;
+    font-weight:  900;
+}
+
+#workspaces button.empty {
+    color: @surface2;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#privacy {
+    color: @peach;
+
+    border-radius: 16px;
+    padding:       0px 8px 0px 8px;
+    margin:        0px 4px 0px 4px;
+}
+
+#privacy-item {
+    margin-right: 8px;
+    margin-left:  8px;
+}

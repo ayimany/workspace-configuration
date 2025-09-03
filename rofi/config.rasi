@@ -1,0 +1,238 @@
+@theme "theme/current.rasi"
+
+configuration {
+    location: 7;
+    font: "Noto Sans 12";
+    yoffset: -16;
+    xoffset: 16;
+    show-icons: true;
+    terminal: "ghostty";
+    run-command: "uwsm app -- {cmd}";
+    icon-theme: "Papirus";
+    steal-focus: true;
+}
+
+* {
+    selected-active-foreground:  @background;
+    lightfg:                     @text;
+    separatorcolor:              @foreground;
+    urgent-foreground:           @red;
+    alternate-urgent-background: @lightbg;
+    lightbg:                     @mantle;
+    background-color:            transparent;
+    border-color:                @foreground;
+    normal-background:           @surface0;
+    selected-urgent-background:  @red;
+    alternate-active-background: @lightbg;
+    spacing:                     2;
+    alternate-normal-foreground: @foreground;
+    urgent-background:           @background;
+    selected-normal-foreground:  @lightbg;
+    active-foreground:           @blue;
+    background:                  @surface0;
+    selected-active-background:  @blue;
+    active-background:           @background;
+    selected-normal-background:  @lightfg;
+    alternate-normal-background: @normal-background;
+    foreground:                  @text;
+    selected-urgent-foreground:  @background;
+    normal-foreground:           @foreground;
+    alternate-urgent-foreground: @red;
+    alternate-active-foreground: @blue;
+    window-background:           transparent;
+
+    padding-distance: 8px;
+    margin-distance: 8px;
+    rounding-radius: 8px;
+
+    window-background:                   @base;
+    foreground-normal:                   @text;
+    foreground-light:                    @subtext0;
+    highlight:                           @text;
+
+    element-normal-background-normal:    @mantle;
+    element-normal-foreground-normal:    @foreground-normal;
+
+    element-normal-background-urgent:    @red;
+    element-normal-foreground-urgent:    @red;
+
+    element-normal-background-active:    @blue;
+    element-normal-foreground-active:    @blue;
+
+    element-alternate-background-normal: @element-normal-background-normal;
+    element-alternate-foreground-normal: @element-normal-foreground-normal;
+
+    element-alternate-background-urgent: @element-normal-background-urgent;
+    element-alternate-foreground-urgent: @element-normal-foreground-urgent;
+
+    element-alternate-background-active: @element-normal-background-active;
+    element-alternate-foreground-active: @element-normal-foreground-active;
+
+    element-selected-background-normal:  @surface0;
+    element-selected-foreground-normal:  @foreground-normal;
+
+    element-selected-background-urgent:  @element-normal-background-urgent;
+    element-selected-foreground-urgent:  @element-normal-foreground-urgent;
+
+    element-selected-background-active:  @element-normal-background-active;
+    element-selected-foreground-active:  @element-normal-foreground-active;
+}
+
+element {
+    border:        0;
+    cursor:        pointer;
+    margin:        @margin-distance;
+    padding:       @padding-distance;
+    border-radius: @rounding-radius;
+}
+
+element normal.normal {
+    background-color: @element-normal-background-normal;
+    text-color:       @element-normal-foreground-normal;
+}
+
+element normal.urgent {
+    background-color: @element-normal-background-urgent;
+    text-color:       @element-normal-foreground-urgent;
+}
+
+element normal.active {
+    background-color: @element-normal-background-active;
+    text-color:       @element-normal-foreground-active;
+}
+
+element selected.normal {
+    background-color: @element-selected-background-normal;
+    text-color:       @element-selected-foreground-normal;
+}
+
+element selected.urgent {
+    background-color: @element-selected-background-urgent;
+    text-color:       @element-selected-foreground-urgent;
+}
+
+element selected.active {
+    background-color: @element-selected-background-active;
+    text-color:       @element-selected-foreground-active;
+}
+
+element alternate.normal {
+    background-color: @element-alternate-background-normal;
+    text-color:       @element-alternate-foreground-normal;
+}
+
+element alternate.urgent {
+    background-color: @element-alternate-background-urgent;
+    text-color:       @element-alternate-foreground-urgent;
+}
+
+element alternate.active {
+    background-color: @element-alternate-background-active;
+    text-color:       @element-alternate-foreground-active;
+}
+
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             2.50000em;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+
+window {
+    padding:          @padding-distance;
+    border:           0;
+    width:            20%;
+    height:           calc(100% - 64px);
+    background-color: @window-background;
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+}
+
+message {
+    padding: @padding-distance;
+    border:  0px;
+}
+
+textbox {
+    text-color: @foreground-normal;
+}
+
+listview {
+    border-color: @highlight;
+    scrollbar:    false;
+    padding:      0px;
+    border:       0px;
+}
+
+scrollbar {
+    enabled: false;
+}
+
+sidebar {
+    border-color: @highlight;
+    border:       0px;
+}
+
+button {
+    spacing:    0;
+    cursor:     pointer;
+    text-color: @foreground-normal;
+}
+
+button selected {
+    background-color: @element-selected-background-normal;
+    text-color:       @element-selected-foreground-normal;
+}
+
+num-filtered-rows {
+    expand:     false;
+    text-color: @foreground-light;
+}
+
+num-rows {
+    expand:     false;
+    text-color: @foreground-light;
+}
+
+textbox-num-sep {
+    expand:     false;
+    str:        "|";
+    text-color: @foreground-light;
+}
+
+inputbar {
+    padding:    @padding-distance;
+    spacing:    @margin-distance;
+    text-color: @normal-foreground;
+    children:   [ "prompt", "textbox-prompt-colon" ,"entry", "num-filtered-rows", "textbox-num-sep", "num-rows", "case-indicator" ];
+}
+
+case-indicator {
+    enabled: false;
+}
+
+entry {
+    text-color:        @normal-foreground;
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: @foreground-light;
+    placeholder:       "Search...";
+}
+
+prompt {
+    enabled: false;
+}
+
+textbox-prompt-colon {
+    enabled: false;
+}

@@ -1,0 +1,8 @@
+# Colors
+
+background-color=#313244
+text-color=#cdd6f4
+progress-color=source #313244
+
+[urgency=critial]
+text-color=#f38ba8

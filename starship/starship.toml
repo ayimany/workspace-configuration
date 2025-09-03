@@ -1,0 +1,15 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = '[󰈺](bold green) '
+error_symbol = '[󰈺](bold red) '
+
+[cmd_duration]
+format = '[󰥔 $duration]($style) '
+
+[directory]
+format = '[$read_only]($read_only_style)[󰉋 $path]($style)'
+read_only = '󰌾 '
+
